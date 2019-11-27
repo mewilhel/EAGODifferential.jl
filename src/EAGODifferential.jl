@@ -1,10 +1,9 @@
-module EAGO_Differential
+module EAGODifferential
 
 
-    using EAGO, MathOptInterface, LinearAlgebra, DataFrames, CSV
+    using EAGO, MathOptInterface, LinearAlgebra
 
     const MOI = MathOptInterface
-    const export_path  = "C:/Users/wilhe/Dropbox/Apps/Overleaf/Global optimization with stiff ODE constraints/Plotting_Code_Data"
 
     import EAGO: build_evaluator!, set_current_node!, set_last_node!,
                  num_state_variables, num_decision_variables,
